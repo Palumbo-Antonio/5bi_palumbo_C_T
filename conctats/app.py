@@ -1,4 +1,3 @@
-  GNU nano 7.2 
 nomi = {
     0: "Corrazzini",
     1: "Tezza"
@@ -18,3 +17,21 @@ while(n!=4):
             for indice, nome in nomi.items():
                 print(f"{indice} -> {nome}{telefoni[indice]}")
             print()
+        case 1:
+            print("nome")
+            nome = input()
+            print("telefono")
+            telefono = input()
+            lastKey = next(reversed(nomi))+1
+            nomi[lastKey] = nome
+            telefoni[lastKey] = telefono
+        case 2:
+            print("nome")
+            nome = input()
+            k = list(nomi.keys())[list(nomi.values()).index(nome)]
+            nomi.pop(k, nome)
+        case 3:
+            print("nome")
+            nome = input()
+            k = list(nomi.keys())[list(nomi.values()).index(nome)]
+            print(telefoni.get(k))
