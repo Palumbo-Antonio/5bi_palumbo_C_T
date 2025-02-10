@@ -31,3 +31,8 @@ while(n!=4):
             nome = input()
             k = list(nomi.keys())[list(nomi.values()).index(nome)]
             nomi.pop(k, nome)
+        case 3:
+            print("nome")
+            nome = input()
+            k = list(nomi.keys())[list(nomi.values()).index(nome)]
+            print(telefoni.get(k))
