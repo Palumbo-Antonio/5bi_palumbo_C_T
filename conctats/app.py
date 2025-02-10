@@ -26,3 +26,8 @@ while(n!=4):
             lastKey = next(reversed(nomi))+1
             nomi[lastKey] = nome
             telefoni[lastKey] = telefono
+        case 2:
+            print("nome")
+            nome = input()
+            k = list(nomi.keys())[list(nomi.values()).index(nome)]
+            nomi.pop(k, nome)
