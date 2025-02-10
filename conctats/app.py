@@ -10,3 +10,11 @@ telefoni = {
     }
 
 n=0
+while(n!=4):
+    print("0--> Vedi contatti\n1--> Aggiungi contatto\n2--> Cancella contatto\n3--> Cerca contatto\n4--> STOP\n");
+    n = int(input())
+    match(n):
+        case 0:
+            for indice, nome in nomi.items():
+                print(f"{indice} -> {nome}{telefoni[indice]}")
+            print()
